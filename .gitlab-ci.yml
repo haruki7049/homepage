@@ -1,15 +1,15 @@
-image: nixos/nix:2.19.3-amd64
+# This file is a template, and might need editing before it works on your project.
+# Full project: https://gitlab.com/pages/plain-html
 
-workflow:
-  rules:
-    - if: $CI_COMMIT_BRANCH
+image: busybox
 
 pages:
   stage: deploy
   script:
-    - echo 'Nothing to do'
-  rules:
-    - if: $CI_COMMIT_BRANCH == "main"
+    - echo "The site will be deployed to $CI_PAGES_URL"
   artifacts:
     paths:
       - public
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+
