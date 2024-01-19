@@ -4,3 +4,7 @@ body {
     border: 5px double #606060;
     text-align: center;
 }
+
+li {
+    text-align: center;
+}
