@@ -6,7 +6,7 @@ workflow:
 
 pages:
   stage: deploy
-  scripts:
+  script:
     - echo 'Nothing to do'
   rules:
     - if: $CI_COMMIT_BRANCH == "main"
