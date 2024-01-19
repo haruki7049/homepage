@@ -1,4 +1,5 @@
 body {
+    font-family: "UDEV Gothic NF";
     margin: 10px 100px;
     padding: 10px;
     border: 5px double #606060;
@@ -7,4 +8,9 @@ body {
 
 li {
     text-align: center;
+}
+
+@font-face {
+    font-family: "UDEV Gothic NF";
+    src: url("./UDEVGothicNF-Regular.ttf") format("truetype");
 }
