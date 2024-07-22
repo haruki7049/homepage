@@ -12,8 +12,6 @@
     "typescript": "^5.0.0"
   },
   "dependencies": {
-    "@hono/vite-dev-server": "^0.13.1",
-    "@hono/vite-ssg": "^0.1.0",
     "hono": "^4.5.1"
   }
 }
