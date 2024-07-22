@@ -3,3 +3,8 @@
 
 # Node modules
 node_modules/
+
+# Nix's result
+result
+
+static/index.html

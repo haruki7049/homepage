@@ -11,7 +11,24 @@
       pkgs = import nixpkgs {
         inherit system;
       };
+      builder = pkgs.writeShellApplication {
+        name = "builder";
+
+        text = ''
+          ${pkgs.bun}/bin/bun run build
+        '';
+      };
     in {
+      apps = {
+        inherit builder;
+        default = builder;
+      };
+
+      packages = {
+        inherit builder;
+        default = builder;
+      };
+
       devShells.default = pkgs.mkShell {
         packages = [
           pkgs.bun
