@@ -33,8 +33,11 @@ jobs:
         run: bun install
       - name: Build static site
         run: bun run build
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          path: static
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-        with:
-          path: static
