@@ -1,4 +1,9 @@
-<!DOCTYPE html>
+import { Hono } from "hono";
+import { html } from "hono/html";
+
+const app = new Hono();
+
+const Content = html`<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
@@ -54,4 +59,12 @@
             </section>
         </footer>
     </body>
-</html>
+</html>`;
+
+app.get('/', (c) => {
+  return c.html(
+    Content
+  );
+});
+
+export default app
