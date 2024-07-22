@@ -34,10 +34,7 @@ jobs:
       - name: Build static site
         run: bun run build
       - name: Upload artifacts
-        uses: actions/upload-artifact@v4
-        with:
-          name: github-pages
-          path: static
+        uses: actions/upload-pages-artifact@v3
 
       - name: Deploy to GitHub Pages
         id: deployment
