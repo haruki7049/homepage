@@ -1,2 +1,5 @@
 # nix-direnv
 .direnv/
+
+# Node modules
+node_modules/
