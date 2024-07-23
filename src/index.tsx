@@ -1,7 +1,19 @@
 import { Hono } from "hono";
 import { html } from "hono/html";
+import type { FC } from "hono/jsx";
 
 const app = new Hono();
+
+const Layout: FC = (props) => {
+  return (
+    <html>
+      <head>
+      </head>
+      <body>
+      </body>
+    </html>
+  )
+}
 
 const Content = html`<!DOCTYPE html>
 <html>
