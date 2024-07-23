@@ -16,7 +16,9 @@ const Layout: FC = () => {
           <Projects />
         </main>
         <footer>
-          <Footer />
+          <Address />
+          <License />
+          <UseNix />
         </footer>
       </body>
     </html>
@@ -31,16 +33,6 @@ const Head: FC = () => {
       <title>haruki7049's homepage</title>
       <link rel="stylesheet" href="style.css" />
       <link rel="icon" type="image/jpg" sizes="64x64" href="./haruki7049.jpg" />
-    </>
-  )
-}
-
-const Footer: FC = () => {
-  return (
-    <>
-      <Address />
-      <License />
-      <UseNix />
     </>
   )
 }
