@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/haruki7049
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://haruki7049.dev
+  * I am haruki7049 (https://keybase.io/haruki7049) on keybase.
+  * I have a public key ASDfbjVWDmhLZOqGDuch6FZOVRysjXidgfeCgQrnhr1XzAo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120df6e35560e684b64ea860ee721e8564e551cac8d789d81f782810ae786bd57cc0a",
+      "host": "keybase.io",
+      "kid": "0120df6e35560e684b64ea860ee721e8564e551cac8d789d81f782810ae786bd57cc0a",
+      "uid": "3ed06995cdc235e353ae91355bbf8a19",
+      "username": "haruki7049"
+    },
+    "merkle_root": {
+      "ctime": 1722494810,
+      "hash": "8a9baee3e53aeae75e304e9c8cc4804d23fd2892e704c353bcc4aef4fe66c678f3b69879bc7602c5bbde702ffe1d5ddbecc753c85dbf93572309f39d63f70947",
+      "hash_meta": "c8bdaff7794912a1d1196a7734b306d54a65a3706120f08fe07249735e1b1214",
+      "seqno": 25969351
+    },
+    "service": {
+      "entropy": "PAUx5w3yx1lDCLwNLxJzmINg",
+      "hostname": "haruki7049.dev",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "6.3.1"
+  },
+  "ctime": 1722494909,
+  "expire_in": 504576000,
+  "prev": "e97fdf248a47019a91102c29b2034e65cabce44a76443697229fecced16b7ae1",
+  "seqno": 9,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg3241Vg5oS2Tqhg7nIehWTlUcrI14nYH3goEK54a9V8wKp3BheWxvYWTESpcCCcQg6X/fJIpHAZqRECwpsgNOZcq85Ep2RDaXIp/sztFreuHEICKry6vEFvZzt58UiXzdlE4svxNYtlobptYlXVaXm+8eAgHCo3NpZ8RAvfS/gMxoDYfcSA3Ep5wD2fE36Ptvb2aGz42Azx4/vFjZzogkUFjbyu1HMW0uKuwyX+e7g+0Y0YgyiGa4nucpD6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEILWERBEtqLpqcHLTn2QWb/qqE/VnPouFDUcHrBtedYNZo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/haruki7049
+
+==================================================================
