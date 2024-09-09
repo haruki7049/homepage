@@ -81,6 +81,7 @@ const Address: FC = () => {
           <li>GitHub: <a href="https://github.com/haruki7049">haruki7049</a></li>
           <li>GitLab: <a href="https://gitlab.com/haruki7049">haruki7049</a></li>
           <li>Twitter: <a href="https://twitter.com/Love__Yoshi">@Love__Yoshi</a></li>
+          <li>Bluesky: <a href="https://bsky.app/profile/haruki7049.bsky.social">@haruki7049.bsky.social</a></li>
           <li>YouTube: <a href="https://www.youtube.com/@haruki7049">@haruki7049</a></li>
           <li>Ko-fi: <a href="https://ko-fi.com/haruki7049">haruki7049</a></li>
         </ul>
