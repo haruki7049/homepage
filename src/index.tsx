@@ -54,19 +54,8 @@ const Projects: FC = () => {
     <>
       <h1>Projects which I have joined</h1>
       <ul>
-        <li><a href="https://gitlab.com/haruki7049/my_neovim_config">my_neovim_config</a></li>
-        <li><a href="https://gitlab.com/haruki7049/harulisp">harulisp</a></li>
-        <li><a href="https://gitlab.com/haruki7049/hrsp">hrsp</a></li>
-        <li><a href="https://github.com/haruki7049/hrtor">hrtor</a></li>
-        <li><a href="https://gitlab.com/kakei/kakei">kakei</a></li>
-        <li><a href="https://gitlab.com/haruki7049/acb">Abstructed-CodeBase</a></li>
-        <li><a href="https://github.com/SuteraVR/SuteraVR">SuteraVR</a></li>
-        <li><a href="https://github.com/web-phone">web-phone</a></li>
-        <li><a href="https://github.com/haruki7049/surrealdb-overlay">surrealdb-overlay</a></li>
-        <li><a href="https://github.com/haruki7049/surrealist-overlay">surrealist-overlay</a></li>
-        <li><a href="https://github.com/haruki7049/cpython-overlay">cpython-overlay</a></li>
+        <li><a href="https://github.com/nixos/nixpkgs">nixpkgs</a></li>
         <li><a href="https://github.com/haruki7049/deno-overlay">deno-overlay</a></li>
-        <li><a href="https://github.com/haruki7049/iasc">iasc</a></li>
       </ul>
     </>
   )
