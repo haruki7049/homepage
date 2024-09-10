@@ -11,28 +11,16 @@
       pkgs = import nixpkgs {
         inherit system;
       };
-      builder = pkgs.writeShellApplication {
-        name = "builder";
-
-        text = ''
-          ${pkgs.bun}/bin/bun run build
-        '';
-      };
+      zig = pkgs.zig_0_13;
     in {
-      apps = {
-        inherit builder;
-        default = builder;
-      };
-
-      packages = {
-        inherit builder;
-        default = builder;
-      };
-
       devShells.default = pkgs.mkShell {
         packages = [
-          pkgs.bun
-          pkgs.typescript-language-server
+          # Zig
+          zig
+          pkgs.zls
+
+          # Nix
+          pkgs.nil
         ];
       };
     });
