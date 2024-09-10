@@ -1,0 +1,23 @@
+---
+.title = "haruki7049's homepage",
+.author = "haruki7049",
+.date = @date("2024-09-10T00:00:00"),
+.layout = "index.shtml",
+.draft = false,
+---
+
+# Projects which I have joined
+- [nixpkgs](https://github.com/nixos/nixpkgs)
+- [deno-overlay](https://github.com/haruki7049/deno-overlay)
+
+# Address
+- GitHub: [@haruki7049](https://github.com/haruki7049)
+- Bluesky: [@haruki7049.bsky.social](https://bsky.app/profile/haruki7049.bsky.social)
+- YouTube: [@haruki7049](https://www.youtube.com/@haruki7049)
+- Ko-fi: [haruki7049](https://ko-fi.com/haruki7049)
+
+This site is hosted under MIT license using GitHub Pages.
+
+Repository: [https://github.com/haruki7049/homepage](https://github.com/haruki7049/homepage)
+
+BTW, I use NixOS. Wanna use NixOS? [https://nixos.org](https://nixos.org)
