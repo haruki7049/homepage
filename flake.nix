@@ -5,35 +5,42 @@
     treefmt-nix.url = "github:numtide/treefmt-nix";
   };
 
-  outputs = { self, nixpkgs, flake-utils, treefmt-nix, ... }:
-    flake-utils.lib.eachDefaultSystem (system:
-    let
-      pkgs = import nixpkgs {
-        inherit system;
-      };
-      builder = pkgs.writeShellApplication {
-        name = "builder";
+  outputs =
+    {
+      self,
+      nixpkgs,
+      flake-utils,
+      treefmt-nix,
+      ...
+    }:
+    flake-utils.lib.eachDefaultSystem (
+      system:
+      let
+        pkgs = import nixpkgs { inherit system; };
+        treefmtEval = treefmt-nix.lib.evalModule pkgs ./treefmt.nix;
+        zig = pkgs.zig_0_13;
+      in
+      {
+        formatter = treefmtEval.config.build.wrapper;
 
-        text = ''
-          ${pkgs.bun}/bin/bun run build
-        '';
-      };
-    in {
-      apps = {
-        inherit builder;
-        default = builder;
-      };
+        checks = {
+          formatting = treefmtEval.config.build.check self;
+        };
 
-      packages = {
-        inherit builder;
-        default = builder;
-      };
+        devShells.default = pkgs.mkShell {
+          packages = [
+            # Nix
+            pkgs.nil
 
-      devShells.default = pkgs.mkShell {
-        packages = [
-          pkgs.bun
-          pkgs.typescript-language-server
-        ];
-      };
-    });
+            # Ziglang
+            zig
+            pkgs.zls
+          ];
+
+          shellHook = ''
+            export PS1="\n[nix-shell\w]$ "
+          '';
+        };
+      }
+    );
 }
