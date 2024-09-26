@@ -12,7 +12,7 @@
             <img src="$site.asset('haruki7049.jpg').link()">
         </header>
 
-        <main id="content" :text="$page.content()"></main>
+        <main id="content" :html="$page.content()"></main>
 
         <hr>
 
