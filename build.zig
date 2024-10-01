@@ -9,13 +9,6 @@ pub fn build(b: *std.Build) void {
         .content_dir_path = "content",
         .assets_dir_path = "assets",
 
-        .static_assets = &.{ "fonts/UDEVGothicNF-Regular.ttf",
-            "haruki7049.jpg",
-            "favicon.ico",
-            "use-nix_nixos.jpg",
-            ".well-known/nostr.json",
-            ".well-known/keybase.txt",
-            ".well-known/atproto-did"
-        },
+        .static_assets = &.{ "fonts/UDEVGothicNF-Regular.ttf", "haruki7049.jpg", "favicon.ico", "use-nix_nixos.jpg", ".well-known/nostr.json", ".well-known/keybase.txt", ".well-known/atproto-did" },
     });
 }
