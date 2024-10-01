@@ -57,5 +57,19 @@ Displays all your context in buffer.
 
 Save your context in buffer to your file.
 
+## To modify Hrtor
+
+1. Clone or generate Hrtor repository for your Hrtor.
+1. Edit!!
+1. Install with: `cargo install --git https://github.com/{username}/{reponame}`
+1. Or Use with Nix: `nix run github:{username}/{reponame}#hrtor`
+
+### Hrtor project's directory structure
+
+- `/cli`
+- `/constants`
+- `/file_loader`
+- `/processor`
+
 ### Repository
 See [github.com/haruki7049/hrtor](https://github.com/haruki7049/hrtor)
