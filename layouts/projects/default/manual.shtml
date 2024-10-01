@@ -11,6 +11,8 @@
             <h1 :text="$page.title"></h1>
         </header>
 
+        <hr>
+
         <main id="content" :html="$page.content()"></main>
 
         <hr>
