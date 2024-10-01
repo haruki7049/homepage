@@ -1,46 +1,42 @@
 {
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
-    flake-utils.url = "github:numtide/flake-utils";
+    flake-parts.url = "github:hercules-ci/flake-parts";
     treefmt-nix.url = "github:numtide/treefmt-nix";
+    systems.url = "github:nix-systems/default";
   };
 
   outputs =
-    {
-      self,
-      nixpkgs,
-      flake-utils,
-      treefmt-nix,
-      ...
-    }:
-    flake-utils.lib.eachDefaultSystem (
-      system:
-      let
-        pkgs = import nixpkgs { inherit system; };
-        treefmtEval = treefmt-nix.lib.evalModule pkgs ./treefmt.nix;
-        zig = pkgs.zig_0_13;
-      in
-      {
-        formatter = treefmtEval.config.build.wrapper;
+    inputs:
+    inputs.flake-parts.lib.mkFlake { inherit inputs; } {
+      systems = import inputs.systems;
+      imports = [
+        inputs.treefmt-nix.flakeModule
+      ];
+      perSystem =
+        { pkgs, ... }:
+        {
+          treefmt = {
+            projectRootFile = "flake.nix";
+            programs.nixfmt.enable = true;
+            programs.zig.enable = true;
+            programs.actionlint.enable = true;
+          };
 
-        checks = {
-          formatting = treefmtEval.config.build.check self;
+          devShells.default = pkgs.mkShell {
+            packages = [
+              # Nix
+              pkgs.nil
+
+              # Ziglang
+              pkgs.zig_0_13
+              pkgs.zls
+            ];
+
+            shellHook = ''
+              export PS1="\n[nix-shell\w]$ "
+            '';
+          };
         };
-
-        devShells.default = pkgs.mkShell {
-          packages = [
-            # Nix
-            pkgs.nil
-
-            # Ziglang
-            zig
-            pkgs.zls
-          ];
-
-          shellHook = ''
-            export PS1="\n[nix-shell\w]$ "
-          '';
-        };
-      }
-    );
+    };
 }
