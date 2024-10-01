@@ -11,4 +11,5 @@ See [github.com/haruki7049/hrtor](https://github.com/haruki7049/hrtor)
 
 # Manual
 
-See [Manual page]($link.page("projects/hrtor/manual"))
+- [Hrtor HEAD manual]($link.page("projects/hrtor/manual"))
+- [Hrtor v0.2.1 manual]($link.page("projects/hrtor/manual-v0.2.0"))
