@@ -1,0 +1,11 @@
+#+title: Homepage
+#+author: haruki7049
+#+email: tontonkirikiri@gmail.com
+
+haruki7049's homepage.
+
+* SSG Building
+
+#+begin_src sh
+  make # This process needed to execute `emacs`
+#+end_src
