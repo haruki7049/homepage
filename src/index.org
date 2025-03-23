@@ -1,0 +1,15 @@
+#+title: Haruki7049's homepage
+#+author: haruki7049
+#+email: tontonkirikiri@gmail.com
+#+language: Japanese
+#+options: toc:nil
+
+* Projects which I have joined
+- [[https://github.com/nixos/nixpkgs][nixos/nixpkgs]]
+- [[https://github.com/SimulaVR/Simula][SimulaVR/Simula]]
+- [[https://github.com/haruki7049/deno-overlay][haruki7049/deno-overlay]]
+- [[https://github.com/haruki7049/hrtor][haruki7049/hrtor]]
+
+* Blogs
+
+[[https://blogs.haruki7049.dev][blogs.haruki7049.dev]]

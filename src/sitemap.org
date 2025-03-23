@@ -1,0 +1,3 @@
+#+TITLE: Sitemap for Haruki7049's blogs
+
+- [[file:index.org][Haruki7049's homepage]]
