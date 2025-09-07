@@ -2,5 +2,14 @@ base_url = "https://haruki7049.dev"
 title = "Haruki7049's homepage"
 theme = "linkita"
 
+[extra]
+header_menu_name = "menu_name"
+
 [extra.footer]
 copyright = "haruki7049"
+
+[extra.menus]
+menu_name = [
+    { url = "https://github.com/haruki7049", name = "GitHub" },
+    { url = "https://zenn.dev/haruki7049", name = "Zenn.dev" },
+]
