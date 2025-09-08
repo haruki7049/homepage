@@ -1,15 +1,29 @@
 base_url = "https://haruki7049.dev"
 title = "Haruki7049's homepage"
-theme = "linkita"
+theme = "archie-zola"
+generate_feeds = true
+feed_filenames = ["rss.xml"]
 
 [extra]
-header_menu_name = "menu_name"
-
-[extra.footer]
+mode = "toggle"  # auto | dark | toggle
 copyright = "haruki7049"
+katex_enable = true
 
-[extra.menus]
-menu_name = [
-    { url = "https://github.com/haruki7049", name = "GitHub" },
-    { url = "https://zenn.dev/haruki7049", name = "Zenn.dev" },
+[[extra.translations.en]]
+show_more = "Read more ⟶"
+previous_page = "← Previous"
+next_page = "Next →"
+posted_on = "on "
+posted_by = "Published by"
+read_time = "minute read"
+all_tags = "All tags"
+menus = [
+    { name = "Home", url = "/", weight = 1 },
+    { name = "Posts", url = "/posts", weight = 2 },
+    { name = "About", url = "/posts/about", weight = 3 },
 ]
+
+[[extra.social]]
+icon = "github"
+name = "GitHub"
+url = "https://github.com/haruki7049"
