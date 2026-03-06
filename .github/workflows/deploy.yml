@@ -33,7 +33,7 @@ jobs:
         uses: actions/upload-artifact@v7.0.0
         with:
           name: github-pages
-          path: ./public/*
+          path: ${{ runner.temp }}/artifact.tar
           include-hidden-files: true
 
   deploy:
