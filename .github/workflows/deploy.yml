@@ -16,6 +16,19 @@ jobs:
       - name: zola build
         run: |
           nix-shell --run 'zola build'
+
+      - name: Archive artifact
+        run: |
+          echo ::group::Archive artifact
+          tar \
+            --dereference --hard-dereference \
+            --directory "./public" \
+            -cvf "$RUNNER_TEMP/artifact.tar" \
+            --exclude=.git \
+            --exclude=.github \
+            .
+          echo ::endgroup::
+
       - name: Upload artifact
         uses: actions/upload-artifact@v7.0.0
         with:
