@@ -1,5 +1,5 @@
 +++
-title = "拙作Zigライブラリ、lightmix v0.20.4の所感"
+title = "拙作Zigライブラリ、lightmix 0.20.4の所感"
 date = 2026-06-09
 +++
 
